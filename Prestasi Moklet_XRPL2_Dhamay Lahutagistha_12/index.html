@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFlow ~</title>
+    <link rel="icon" href="https://www.flaticon.com/free-icon/music_4472584" type="w-full h-[500px] bg-cover bg-center">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function changeVideo(videoUrl) {
+            const iframe = document.getElementById('videoPlayer');
+            iframe.src = videoUrl;
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-100">
+    <div class="bg-teal-100 text-black text-center p-4 text-xl font-bold">Here's some music you have to listen!</div>
+    <br>
+
+    <div class="flex h-[calc(100vh-100px)]">
+        <!-- Content Area on the left -->
+        <div class="w-3/4 bg-black p-3 flex items-center justify-center">
+            <iframe id="videoPlayer" class="w-full h-full" src="https://www.youtube.com/embed/-X8pMHtcqvc?si=mt20DhL3XExuZDUd" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Prestasi list on the right -->
+        <div class="w-1/4 bg-gray-100 p-6 overflow-y-auto"> 
+            <div class="space-y-4">
+                <div onclick="changeVideo('https://www.youtube.com/embed/SctrVF37GAQ?si=vIfxqH4h_OP-hwod')" class="bg-gray-200 p-3 rounded-md hover:bg-blue-200 cursor-pointer transition-all"> <strong>Old Love </strong> - Putri Dahlia</div>
+                <div onclick="changeVideo('https://www.youtube.com/embed/2o8nCGhlIHY?si=Yz5eI93_TEe53L5V')" class="bg-gray-200 p-3 rounded-md hover:bg-sky-200 cursor-pointer transition-all"> <strong>End Of Beginning </strong> - Djo</div>
+                <div onclick="changeVideo('https://www.youtube.com/embed/IpFX2vq8HKw?si=lq5WgsAsCJWVMm7s')" class="bg-gray-200 p-3 rounded-md hover:bg-blue-200 cursor-pointer transition-all"> <strong>Blue </strong> - Yung Kai</div>
+               <div onclick="changeVideo('https://www.youtube.com/embed/zLbKFn2gC38?si=mzvE6bm-YkaXGLg7')" class="bg-gray-200 p-3 rounded-md hover:bg-blue-200 cursor-pointer transition-all"> <strong>Bunga Abadi </strong> - Rio Clappy</div>
+                <div onclick="changeVideo('https://www.youtube.com/embed/kOBr5AASQdA?si=kman9vVUC5o-QMYO')" class="bg-gray-200 p-3 rounded-md hover:bg-blue-200 cursor-pointer transition-all"> <strong>Abadi </strong> - Dendi Nata</div>
+                <div class="text-center bg-gray-200 p-3 rounded-md hover:bg-neutral-300 cursor-pointer transition-all mt-4">
+                    <a href="https://www.canva.com"  target="_blank">Canva 
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="bg-teal-100 font-bold text-black text-center p-4">
+      <marquee behavior="scroll" direction="left">
+          Welcome to rnb's music website 😮👀 Hope you enjoy the musics 🔥
+      </marquee>
+    </div>
+</body>
+</html>
